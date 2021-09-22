@@ -1,0 +1,133 @@
+.navbar {
+  display: flex;
+  height: 60px;
+  width: 100%;
+  background: black;
+  align-items: center;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+  position: fixed;
+}
+
+.navbar__logo {
+  font-size: 1.1rem;
+  display: flex;
+  margin-bottom: 30px;
+  /* margin-left: 50px; */
+  color: white;
+  font-weight: bold;
+}
+
+.nav__a {
+  font-size: 1.9rem;
+}
+
+.nav__r {
+  font-size: 1.9rem;
+}
+
+.navbar__ul {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin-bottom: 40px;
+}
+
+.navbar__li {
+  list-style: none;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.navbar__navlink {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+}
+
+.navbar__active {
+  border-bottom: 2px solid white;
+}
+
+.navbar__navlink:hover {
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+.hamburgerMenu {
+  display: none;
+}
+
+/* Responsive using media quries  */
+
+@media (max-width: 870px) {
+  .nav__logo {
+    font-size: 1.1rem;
+  }
+  .navbar__navlink {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .navbar__content {
+    display: none;
+  }
+  .hamburgerMenu {
+    display: block;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 160px;
+  }
+  .nav__logo {
+    margin-bottom: 140px;
+  }
+
+  .mobilenav {
+    display: flex;
+    position: absolute;
+    z-index: 99;
+    top: 70px;
+    background: rgb(238, 237, 237);
+    color: lightgray;
+    width: 50%;
+    margin-left: 13%;
+    border-radius: 20px;
+  }
+  .navbar__navlink {
+    color: black;
+    background-color: none;
+  }
+  .navbar__active {
+    color: black;
+    background-color: none;
+    border-bottom: 2px solid black;
+  }
+  .navbar__ul {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    justify-content: center;
+  }
+
+  .navbar__li {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .navbar {
+    padding-left: 20px;
+  }
+  .hamburgerMenu {
+    position: relative;
+    left: 50px;
+  }
+}

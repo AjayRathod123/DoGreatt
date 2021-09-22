@@ -1,0 +1,232 @@
+.footer__top {
+  height: 25vh;
+  background-color: #15323a;
+  display: flex;
+}
+
+.footer__topleft {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  width: 50%;
+}
+
+.footer__emailcontact {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.footer__emailid {
+  border-bottom: 1px solid white;
+}
+
+.footer__contactnumber {
+  border-bottom: 1px solid white;
+}
+
+.footer__topright {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  width: 50%;
+}
+
+.footer__twitterandinsta {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.footer__follow {
+  font-size: 1.1rem;
+}
+
+.footer__bottom {
+  width: 100%;
+  height: 40px;
+  bottom: 0;
+  position: fixed;
+  background-color: black;
+  align-items: center;
+  text-align: center;
+}
+
+.footer__bottom p {
+  color: white;
+  font-weight: bold;
+  padding-top: 10px;
+  font-size: 0.8rem;
+}
+
+.footer__twitter {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.footer__twitterid {
+  font-size: 1rem;
+  margin-left: 10px;
+  margin-top: 10px;
+  border-bottom: 1px solid white;
+}
+
+.footer__instagram {
+  font-size: 1rem;
+  align-items: center;
+  display: flex;
+}
+
+.footer__instagramid {
+  font-size: 1rem;
+  margin-left: 10px;
+  margin-top: 10px;
+  border-bottom: 1px solid white;
+}
+
+.footer__whatsapp {
+  font-size: 1rem;
+  align-items: center;
+  display: flex;
+}
+
+.footer__whatsapp i {
+  margin-bottom: 2px;
+}
+
+.footer__whatsappno {
+  font-size: 1rem;
+  margin-left: 10px;
+  margin-top: 10px;
+  border-bottom: 1px solid white;
+}
+
+/* Responsive using media queries  */
+
+@media (max-width: 1500px) {
+  .footer__top {
+    padding-bottom: 50px;
+  }
+  .footer__emailcontact {
+    width: 70%;
+  }
+  .footer__twitterandinsta {
+    width: 70%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .footer__emailcontact {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+  }
+  .footer__topright {
+    width: 80%;
+  }
+}
+
+@media (max-width: 900px) {
+  .footer__top {
+    height: 30vh;
+  }
+  .footer__topleft {
+    width: 100%;
+  }
+
+  .footer__twitterandinsta {
+    display: flex;
+    flex-direction: column;
+    margin: -20px 0;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+  .footer__twitterid {
+    font-size: 0.9rem;
+  }
+  .footer__instagramid {
+    font-size: 0.9rem;
+  }
+  .footer__whatsappno {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer__topleft {
+    font-size: 0.8rem;
+  }
+  .footer__topright {
+    width: 100%;
+  }
+  .footer__emailcontact {
+    font-size: 0.6rem;
+  }
+  .footer__follow {
+    font-size: 0.8rem;
+  }
+
+  .footer__twitterid {
+    font-size: 0.8rem;
+  }
+
+  .footer__instagramid {
+    font-size: 0.8rem;
+  }
+  .footer__whatsappno {
+    font-size: 0.8rem;
+  }
+  .footer__twitter i {
+    font-size: 0.8rem;
+  }
+  .footer__instagram i {
+    font-size: 0.8rem;
+  }
+  .footer__whatsapp i {
+    font-size: 0.8rem;
+  }
+  .footer__bottom p {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .footer__line {
+    font-size: 0.7rem;
+  }
+  .footer__follow {
+    font-size: 0.7rem;
+  }
+
+  .footer__twitterid {
+    font-size: 0.6rem;
+  }
+
+  .footer__instagramid {
+    font-size: 0.6rem;
+  }
+  .footer__whatsappno {
+    font-size: 0.6rem;
+  }
+  .footer__twitter i {
+    font-size: 0.6rem;
+  }
+  .footer__instagram i {
+    font-size: 0.6rem;
+  }
+  .footer__whatsapp i {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .footer__line {
+    font-size: 0.6rem;
+  }
+}

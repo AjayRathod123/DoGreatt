@@ -1,0 +1,229 @@
+.home {
+  display: flex;
+  height: 100vh;
+  /* margin-bottom: 100px; */
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.main_homeimg {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.home__heading {
+  display: flex;
+}
+
+.home__heading1 {
+  font-weight: bold;
+  color: black;
+}
+
+.home__heading2 {
+  font-weight: bold;
+  color: black;
+  margin-left: 10px;
+}
+
+.home__tocheck {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home__tocheckour {
+  font-weight: bolder;
+  color: black;
+  font-size: 1.3rem;
+  margin-top: 20px;
+}
+
+.home__headingServiceNavlink {
+  font-weight: bold;
+  color: white;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.home__headingServiceNavlink:hover {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.home__checkout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+}
+
+.home__checkoutButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 10px 30px;
+  background-color: black;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  margin-top: 5px;
+}
+
+.home__checkoutButton:hover {
+  color: black;
+  border-bottom: none;
+  background-color: white;
+  outline: none;
+  cursor: pointer;
+}
+
+.home__popular {
+  display: flex;
+  color: white;
+  margin-top: 19px;
+}
+
+.home__webandvideo {
+  display: flex;
+}
+
+.home__photoanduiux {
+  display: flex;
+}
+
+.home__popularbtn {
+  font-weight: bold;
+  padding: 3px;
+  font-size: 1.1rem;
+}
+
+.home__webdevpbtn {
+  border: 1px solid white;
+  border-radius: 20px;
+  font-weight: bold;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-left: 10px;
+  padding-top: 2px;
+  padding-right: 10px;
+}
+
+.home__videoeditbtn {
+  border: 1px solid white;
+  border-radius: 20px;
+  font-weight: bold;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-left: 10px;
+  padding-top: 2px;
+  padding-right: 10px;
+}
+
+.home__photoeditbtn {
+  border: 1px solid white;
+  border-radius: 20px;
+  font-weight: bold;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-left: 10px;
+  padding-top: 2px;
+  padding-right: 10px;
+}
+
+.home__uiuxbtn {
+  border: 1px solid white;
+  border-radius: 20px;
+  font-weight: bold;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-left: 10px;
+  padding-top: 2px;
+  padding-right: 10px;
+}
+
+.home__webdevpbtn:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+
+.home__videoeditbtn:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+
+.home__photoeditbtn:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+
+.home__uiuxbtn:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+
+/* Responsive using media queries  */
+
+@media (max-width: 800px) {
+  .home__heading {
+    justify-content: center;
+  }
+  .home__heading1 {
+    font-size: 2rem;
+  }
+  .home__heading2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 670px) {
+  .home__popular {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 550px) {
+  .home__heading1 {
+    font-size: 1.5rem;
+  }
+  .home__heading2 {
+    font-size: 1.5rem;
+  }
+  .home__tocheckour {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .home__heading1 {
+    font-size: 1.1rem;
+  }
+  .home__heading2 {
+    font-size: 1.1rem;
+  }
+  .home__tocheckour {
+    font-size: 0.8rem;
+  }
+  .home__checkoutButton {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .home__popular {
+    font-size: 0.8rem;
+  }
+}
