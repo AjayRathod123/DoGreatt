@@ -20,6 +20,10 @@ const PORT = process.env.PORT || 8000;
 
 // Routing
 
+app.get("/", (req, res) => {
+  res.send("Hello in home page");
+});
+
 app.get("/about", (req, res) => {
   res.send("Hello in about page");
 });
