@@ -1,1 +1,1 @@
-web:node ./app.js
+web:node C:\Users\Admin\Desktop\HTML\Mernreact\server\app.js
