@@ -14,7 +14,7 @@ dotenv.config({
 require("C:/Users/Admin/Desktop/HTML/Mernreact/server/db/conn.js");
 app.use(express.json());
 
-app.use(require("./server/router/auth.js"));
+app.use(require("./router/auth.js"));
 
 const PORT = process.env.PORT || 8000;
 
