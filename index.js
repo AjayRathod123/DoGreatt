@@ -16,7 +16,7 @@ app.use(express.json());
 
 app.use(require("./router/auth.js"));
 
-const PORT = process.env.PORT || 8000;
+let PORT = process.env.PORT || 8000;
 
 // Routing
 
@@ -38,9 +38,9 @@ app.get("/work", (req, res) => {
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
-  app.get("*", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
-  });
+  // app.get("*", (req, res) => {
+  //   res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
+  // });
 }
 
 // __dirname = path.resolve();
