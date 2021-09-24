@@ -11,7 +11,7 @@ dotenv.config({
   path: "C:/Users/Admin/Desktop/HTML/Mernreact/server/config.env",
 });
 
-require("C:/Users/Admin/Desktop/HTML/Mernreact/server/db/conn.js");
+require("/server/db/conn.js");
 app.use(express.json());
 
 app.use(require("./router/auth.js"));
